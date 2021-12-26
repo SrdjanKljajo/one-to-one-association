@@ -51,7 +51,7 @@ app.use(notFound)
 // Custom database errors
 app.use(errorHandler)
 
-const PORT = process.env.PORT || 5001
+const PORT = process.env.PORT || 5000
 
 app.listen(PORT, async () => {
   console.log(`Server run on ${process.env.NODE_ENV} mode, on port ${PORT}`)
