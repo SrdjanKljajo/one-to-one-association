@@ -6,9 +6,10 @@ const {
   getCoach,
   createTeamCoach,
   updateTeamCoach,
+  deleteCoach,
 } = require('../controllers/coach')
 
 router.route('/').get(getAllCoachs).post(createTeamCoach)
-router.route('/:slug').get(getCoach).put(updateTeamCoach)
+router.route('/:slug').get(getCoach).put(updateTeamCoach).delete(deleteCoach)
 
 module.exports = router
